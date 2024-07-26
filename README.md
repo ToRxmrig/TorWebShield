@@ -1,15 +1,29 @@
+# 🛠️ Apache2 and Tor Setup Guide
+
+Welcome to the Apache2 and Tor setup guide. This document outlines the steps to install and configure Apache2 and Tor for serving a hidden service. 
+
+## Badges
+
+[![Build Status](https://img.shields.io/badge/Build%20Status-Passing-brightgreen)](https://shields.io)
+[![License](https://img.shields.io/badge/License-MIT-blue)](https://opensource.org/licenses/MIT)
+
+## Setup Script
+
+To automate the installation and configuration process, use the provided `setup.sh` script.
+
+```bash
 #!/bin/bash
 
-######  🛠️  Update package list and upgrade existing packages
+# 🛠️ Update package list and upgrade existing packages
 echo "Updating package list and upgrading existing packages..."
 sudo apt-get update
 sudo apt-get upgrade -y
 
-######  📦  Install Apache2, Tor, and development tools
+# 📦 Install Apache2, Tor, and development tools
 echo "Installing Apache2, Tor, build-essential, gcc, cmake, python3, and python3-pip..."
 sudo apt-get install -y apache2 tor build-essential gcc cmake python3 python3-pip
 
-######  🚀  Start Apache2 and Tor services
+# 🚀 Start Apache2 and Tor services
 echo "Starting Apache2 and Tor services..."
 sudo service apache2 start
 sudo service apache2 enable
@@ -22,7 +36,7 @@ echo "Apache2 and Tor have been installed and started."
 sudo systemctl status apache2
 sudo systemctl status tor
 
-######  🔧  Set Permissions and Ownership for Apache2
+# 🔧 Set Permissions and Ownership for Apache2
 
 # Apache2 Configuration File
 echo "Setting permissions for Apache2 configuration file..."
@@ -39,7 +53,7 @@ echo "Setting permissions for Apache log directory..."
 sudo chown -R www-data:www-data /var/log/apache2
 sudo chmod -R 755 /var/log/apache2
 
-######  🛡️  Tor Configuration Permissions
+# 🛡️ Tor Configuration Permissions
 
 # Tor Configuration File
 echo "Setting permissions for Tor configuration file..."
@@ -58,7 +72,7 @@ sudo chown debian-tor:debian-tor /var/lib/tor/hidden_service/private_key
 sudo chmod 600 /var/lib/tor/hidden_service/hostname
 sudo chmod 600 /var/lib/tor/hidden_service/private_key
 
-######  🔐  Security Recommendations
+# 🔐 Security Recommendations
 
 # Configuration Files
 echo "Security Note: Configuration files should be readable only by necessary services and writable only by root to prevent unauthorized changes."
