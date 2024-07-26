@@ -1,0 +1,8 @@
+# append these lines to /etc/tor/torrc
+# Tor Configuration
+
+# Directory for hidden service configuration and keys
+HiddenServiceDir /var/lib/tor/hidden_service/
+
+# Map port 80 of the hidden service to port 80 of localhost
+HiddenServicePort 80 127.0.0.1:80
