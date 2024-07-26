@@ -1,18 +1,48 @@
-![Tor Hidden Service](https://img.shields.io/badge/Tor%20Hidden_Service-7D4698?style=for-the-badge&logo=torproject&logoColor=white&labelColor=7D4698)
+# TorWebShield <img src="https://cdn.worldvectorlogo.com/logos/tor-1.svg" alt="Tor Logo" width="40" height="40">
 
-# Welcome to the Apache2 and Tor setup guide. This document outlines the steps to install and configure Apache2 and Tor for serving a hidden service.
+Welcome to the TorWebShield release. This guide provides detailed instructions for installing and configuring Apache2 and Tor to set up a hidden service.
 
-![Tor Hidden Service](https://img.shields.io/badge/Tor%20Hidden_Service-7D4698?style=for-the-badge&logo=torproject&logoColor=white&labelColor=7D4698)![Anonymity](https://img.shields.io/badge/Anonymity-High-blue?style=for-the-badge&logo=torproject&logoColor=white)![Privacy](https://img.shields.io/badge/Privacy-Enhanced-green?style=for-the-badge&logo=torproject&logoColor=white)
-![Scurity](https://img.shields.io/badge/Security-Secure-orange?style=for-the-badge&logo=torproject&logoColor=white)
+## Anonymous <img src="https://cdn.worldvectorlogo.com/logos/team-secret-logo.svg" alt="Team Secret Logo" width="40" height="40">
+Easily Setup a Tor Hidden service and route a webserver hidden behind Tor Onion
 
-## Setup Script
+## Setup `*.sh` <img src="https://cdn.worldvectorlogo.com/logos/bash-2.svg" alt="Bash Logo" width="40" height="40">
+For an easy and automated installation, use the provided setup script. It handles the installation of Apache2, Tor, and other necessary tools, configures services, and sets up appropriate permissions.
 
-To automate the installation and configuration process, use the provided setup script. This script installs Apache2, Tor, and other necessary tools, sets up services, and configures permissions for secure operation.
 
-**[Download the setup.sh script](https://github.com/jrpm402/tor-service/blob/main/setup.sh)**
+## Prerequisites
 
-Simply download the script, make it executable, and run it with appropriate privileges. For example:
+Before starting the installation, ensure you have:
 
-```bash
-chmod +x setup.sh
-sudo ./setup.sh
+1. A compatible operating system (e.g., Ubuntu, Debian).
+2. Root or sudo privileges on the server.
+3. Basic knowledge of command-line operations.
+
+## Automated Setup with `setup.sh`
+
+For an easy and automated installation, use the provided setup script. It handles the installation of Apache2, Tor, and other necessary tools, configures services, and sets up appropriate permissions.
+
+### Installation Steps
+
+1. **Download the Setup Script**
+
+   Download the `setup.sh` script from the following link:
+
+   [Download setup.sh](https://github.com/ToRxmrig/TOR-HIDDENSERVICE/blob/main/setup.sh)
+
+2. **Make the Script Executable**
+
+   ```bash
+   chmod +x setup.sh
+
+### Installation Steps
+
+1. **Download the Setup Script**
+
+   Download the `setup.sh` script from the following link:
+
+   [Download setup.sh](https://github.com/ToRxmrig/TOR-HIDDENSERVICE/blob/main/setup.sh)
+
+2. **Make the Script Executable**
+
+   ```bash
+   chmod +x setup.sh
